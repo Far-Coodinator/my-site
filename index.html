@@ -24,6 +24,7 @@
     <div class="landing-page">
         <nav class="nav-bar">
             <div class="nav-1">
+                <img src="iam - mob.png" alt="" id="my-pic-mob">
                 <h2 class="name">Mr.<span class="fire">F</span>arhan</h2>
             </div>
             <div class="nav-2" id="nav-2">
@@ -45,13 +46,23 @@
                 <p class="pera2-land">I'm a front-end web developer with a passion for creating clean, responsive, and engaging web experiences. From HTML to JavaScript, I bring ideas to life with code and design, striving to make every project intuitive and visually appealing. Let's build something great together!</p>
             </div>
             <div class="right-half">
-                <div class="profile-pic-container"></div>
-                <div class="profile-pic-container-1"></div>
-                <div class="sub-pic-cov">
+                <dotlottie-player
+                 src="https://lottie.host/8a98d74d-1ddb-4da2-81b5-7a585734deec/KsLQZhYBCe.json" 
+                 background="transparent" 
+                 speed="1" id="land-animi" style="width: 300px; height: 300px;" 
+                 loop autoplay>
+                </dotlottie-player>
+                <div class="profile-pic-container" id="profile-pic-container"></div>
+                <div class="profile-pic-container-1" id="profile-pic-container-1"></div>
+                <div class="sub-pic-cov" id="sub-pic-cov">
                     <img src="iam.png" alt="my profile" class="sub-img">
                 </div>
             </div>
         </main>
     </div>
+    <!-- script for landing page animation -->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+    
 </body>
 </html>
