@@ -26,6 +26,9 @@ body{
     background-position: center;
     background-repeat: no-repeat; */
 }
+#my-pic-mob{
+    display: none;
+}
 
 .nav-bar{
     padding: 0 50px;
@@ -170,8 +173,22 @@ body{
 }
 
 @media screen and (max-width:690px){
+    .landing-page .nav-1{
+        display: flex;
+        justify-content: space-between;
+        width: 140px;
+        padding-top: 5px;
+    }
     .landing-page .nav-1 h2{
         font-size: 22px;
+    }
+    #my-pic-mob{
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid var(--electricGreen);
+        box-shadow: inset 0px 0px 10px var(--electricGreen);;
     }
     #nav-2{
         display: none;
@@ -185,13 +202,13 @@ body{
         text-align: center;
     }
     .lan-pg-content .pera-lan{
-        font-size: 9px;
+        font-size: 10px;
     }
     .lan-pg-content .intro{
         font-size: 18px;
     }
     .pera2-land{
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .right-half{
