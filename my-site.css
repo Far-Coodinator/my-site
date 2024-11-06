@@ -173,9 +173,6 @@ body{
     #nav-2{
         display: none;
     }
-    .landing-page{
-        height: max-content;
-    }
     .lan-pg-content{
         flex-direction: column;
         align-items:center;
