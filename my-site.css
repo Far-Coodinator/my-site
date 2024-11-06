@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green:rgb(0, 255, 0);
+    --electricGreen:rgb(204,255,51);
+    --maximumBlueGreen:rgb(8,189,189);
+    --mango:rgb(245,183,0);
+}
+body{
+    background: #191512f7;
+    color: white;
+}
+.landing-page{
+    width: 100%;
+    height: 100vh;
+    max-width: 1230px;
+    margin:0 auto;
+    background: rgb(1,0,6);
+    background: linear-gradient(177deg, rgba(1,0,6,1) 5%, rgba(56,56,60,1) 45%, rgba(123,106,130,1) 89%);
+    
+    /* background-image: url(me2.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.nav-bar{
+    padding: 0 50px;
+    margin: 0 0 10px 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+    font-size: 20px;
+}
+
+/* styles for desktop nav bar */
+.nav-ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+}
+.nav-ul li{
+    margin: 0 10px;
+    /* cursor: pointer; */
+}
+.nav-ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.404);
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.4s;
+}
+.nav-ul li a:hover{
+    color: var(--green);
+}
+
+/* styles for my name in nav bar  */
+.nav-1 h2{
+    color: var(--maximumBlueGreen);
+}
+.nav-1 span{
+    color: var(--green);
+    font-size: 1.5em;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.divider{
+    border-bottom: 5px solid var(--green);
+    width: 90%;
+    margin: auto;
+}
+
+.lan-pg-content{
+    display: flex;
+    margin-top: 100px;
+}
+.lan-pg-content > div{
+    min-width: 40%;
+    max-width: 500px;
+}
+
+.lan-pg-content .left-half{
+    padding: 20px 20px 20px 40px;
+    max-width: 500px;
+}
+.lan-pg-content .pera-lan{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 0.6em;
+    margin: 0 25px;
+}
+.lan-pg-content .intro{
+    margin: 10px 25px;
+}
+.lan-pg-content .intro .name-hiLigh{
+    color: var(--green);
+}
+.lan-pg-content .intro-space{
+    margin-left: 10px;
+    color: rgb(245, 184, 0);;
+}
+.pera2-land{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.626);
+    margin: 25px;
+}
+
+/* this style only for my picuter in landing page */
+.right-half {
+    position: relative;
+}
+
+.profile-pic-container {
+    width: 270px;
+    height: 260px;
+    border-top: 10px solid var(--green);
+    border-left: 10px solid var(--green);
+    border-right: 10px solid var(--green);
+    position: absolute;
+    top: 28px;
+    left: 3px;
+    box-shadow: 0px 5px 15px var(--green), inset 0px 0px 10px var(--green);
+}
+.profile-pic-container-1{
+    border-bottom: 10px solid var(--green);
+    box-shadow:  inset 0px 5px 15px var(--green);
+    width: 270px;
+    position: absolute;
+    top: 278px;
+    left: 3px;
+    z-index: 999;
+}
+.right-half .sub-pic-cov {
+    overflow: hidden;
+    position: absolute;
+    top: -22px;
+    left: -28px;
+    width: 270px;
+    height: 300px;
+}
+.right-half .sub-pic-cov img{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 290px;
+}
+
+
+
+
+@media screen and (min-width:900px) {
+    .lan-pg-content{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:690px){
+    #nav-2{
+        display: none;
+    }
+    .landing-page{
+        height: max-content;
+    }
+    .lan-pg-content{
+        flex-direction: column;
+        align-items:center;
+        margin-top: 10px;
+    }
+    .lan-pg-content .pera-lan,.lan-pg-content .intro,.pera2-land{
+        text-align: center;
+    }
+    .lan-pg-content .pera-lan{
+        font-size: 9px;
+    }
+    .lan-pg-content .intro{
+        font-size: 18px;
+    }
+    .pera2-land{
+        font-size: 10px;
+    }
+
+    .right-half{
+        height: 320px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .profile-pic-container {
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        width: 200px;
+        height: 200px;
+        border-top: 10px solid var(--green);
+        border-left: 10px solid var(--green);
+        border-right: 10px solid var(--green);
+        box-shadow: 0px 5px 15px var(--green), inset 0px 0px 10px var(--green);
+    }
+    .profile-pic-container-1{
+        position: absolute;
+        top: 80%;
+        left: 15%;
+        border-bottom: 10px solid var(--green);
+        box-shadow:  inset 0px 5px 15px var(--green);
+        width: 200px;
+        z-index: 999;
+    }
+    .right-half .sub-pic-cov {
+        position: absolute;
+        left: 13%;
+        top: -1%;
+        overflow: hidden;
+        width: 200px;
+        height: 300px;
+    }
+    .right-half .sub-pic-cov img{
+        position: absolute;
+        top: 10%;
+        left: -10%;
+        width: 210px;
+    }
+
+}
