@@ -170,6 +170,9 @@ body{
 }
 
 @media screen and (max-width:690px){
+    .landing-page .nav-1 h2{
+        font-size: 22px;
+    }
     #nav-2{
         display: none;
     }
