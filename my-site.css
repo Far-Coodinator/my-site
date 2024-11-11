@@ -9,6 +9,12 @@
     --maximumBlueGreen:rgb(8,189,189);
     --mango:rgb(245,183,0);
     --nav-anchor:rgba(255, 255, 255, 0.404);
+
+    /* root for pageNo2  */
+    --Cyan: hsl(180, 62%, 55%);
+    --Red: hsl(0, 78%, 62%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
 }
 body{
     background: #191512f7;
@@ -156,8 +162,8 @@ body{
     overflow: hidden;
     position: absolute;
     top: -22px;
-    left: -28px;
-    width: 270px;
+    left: -30px;
+    width: 290px;
     height: 300px;
 }
 .right-half .sub-pic-cov img{
@@ -171,7 +177,89 @@ body{
     display: none;
 }
 
+ /* style of pageNo2 💫💫💫💫💫💫💫💫💫💫 */
+ .page-divider{
+    border-bottom: 2px solid var(--Orange);
+    width: 80%;
+    margin: auto;
+ }
+ #pageNo2{
+    width: 100%;
+    max-width: 1230px;
+    margin:0 auto;
+    background: linear-gradient(354deg, rgba(1,0,6,1) 5%, rgba(56,56,60,1) 45%, rgba(123,106,130,1) 89%);
+ }
 
+ #pageNo2 > h2{
+    text-align: center;
+    margin: 20px;
+ }
+
+.skills-grid{
+    margin: 15px auto;
+    display: grid;
+    grid-template-areas: 
+    "H H"
+    "C J"
+    "S S"
+    ;
+    
+}
+
+.skill{
+    max-width: 500px;
+    min-width:300px;
+    height: 200px;
+    border: 1px solid var(--maximumBlueGreen);
+    background: rgb(82,55,101);
+background: linear-gradient(90deg, rgba(82,55,101,1) 0%, rgba(107,76,76,1) 50%, rgba(94,68,32,1) 100%);
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.nameOfskill{
+    margin: 20px;
+    color: var(--Blue);
+    font-family: "Creepster", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.skill .pera{
+    margin: 0 30px;
+    font-size: 15px;
+    color: var(--nav-anchor);
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.skill .logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#box-1{
+    grid-area:H;
+    justify-self: center;
+}
+#box-2{
+    grid-area: C;
+    justify-self: end;
+}
+#box-3{
+    grid-area: J;
+    justify-self: start;
+}
+#box-4{
+    grid-area: S;
+    justify-self: center;
+}
+/* 🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️ */
 
 @media screen and (min-width:900px) {
     .lan-pg-content{
@@ -219,7 +307,7 @@ body{
         align-items: end;
         overflow: hidden;
         width: 0;
-        height: 100vh;
+        height: 100%;
         transition-duration: 0.5s;
         position: absolute;
         top: 0;
@@ -271,5 +359,14 @@ body{
         display: none;
     }
     
-
+    /* page No 2 */
+    .skills-grid{
+        width: 100%;
+        grid-template-areas: 
+        "H"
+        "C"
+        "J"
+        "S";
+        justify-content: center;
+    }
 }
