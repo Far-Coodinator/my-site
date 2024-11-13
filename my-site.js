@@ -9,6 +9,32 @@
   //   }
   // });
 
+// this is for disable the inspect 
+
+(function() {
+  var element = new Image();
+  Object.defineProperty(element, 'id', {
+      get: function() {
+          // This is triggered when the developer tools are opened
+          alert('Developer tools are open. Actions may be restricted!');
+      }
+  });
+  console.log(element);
+})();
+// Prevent common developer tools shortcuts and right-click
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && (event.key === 'i' || event.key === 'I' || event.key === 'u' || event.key === 'U' || event.key === 'j' || event.key === 'J' || event.key === 's' || event.key === 'S')) {
+      event.preventDefault();
+      alert("Shortcut disabled");
+  }
+});
+
+// Disable right-click context menu
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+  alert("Right-click is disabled");
+});
+
 
 
 // this script to open the nav-bar of mobile

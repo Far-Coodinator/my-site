@@ -191,6 +191,34 @@ body{
     background: linear-gradient(354deg, rgba(1,0,6,1) 5%, rgba(56,56,60,1) 45%, rgba(123,106,130,1) 89%);
  }
 
+#pageNo2 .behind-text{
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    
+}
+#pageNo2 .behind-text h1{
+    margin-left: 150px;
+    font-size: 550px;
+    color: rgba(237, 220, 220, 0.082);
+    animation: text-behind 40s linear infinite;
+}
+@keyframes text-behind {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
 #pageNo2 > h2{
     text-align: center;
     margin: 20px;
@@ -198,6 +226,7 @@ body{
 
 .skills-grid{
     margin: 15px auto;
+    position: relative;
     display: grid;
     grid-template-areas: 
     "H H"
@@ -218,6 +247,7 @@ body{
     margin: 5px;
     position: relative;
     border-radius: 5px;
+    z-index: 3;
 
 }
 
@@ -303,7 +333,7 @@ body{
     visibility: hidden;
 }
 
-#pageNo2 .show-more .btn:hover #down-arrow{
+#pageNo2 .show-more:hover #down-arrow{
     visibility: visible;
 }
 
@@ -420,5 +450,12 @@ body{
 
     #pageNo2 .skill{
         border: none;
+    }
+
+    #pageNo2 .behind-text{
+        display: none;
+    }
+    #pageNo2 .show-more{
+        display: none;
     }
 }
