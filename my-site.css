@@ -16,10 +16,31 @@
     --Orange: hsl(34, 97%, 64%);
     --Blue: hsl(212, 86%, 64%);
 }
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #191512f7;
     color: white;
 }
+#goUp{
+    /* display: block; */
+    position: fixed;
+    right: 30px;
+    bottom: 35px;
+    width: 40px ;
+    height: 40px;
+    transition: 0.4s;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+#goUp img{
+    width: 100%;
+    height: 100%;
+}
+
 .landing-page{
     width: 100%;
     height: 100vh;
@@ -178,7 +199,7 @@ body{
 }
 
  /* style of pageNo2 💫💫💫💫💫💫💫💫💫💫 */
- .page-divider{
+ #pageNo2 .page-divider{
     border-bottom: 2px solid var(--Orange);
     width: 80%;
     margin: auto;
@@ -236,14 +257,14 @@ body{
     
 }
 
-.skill{
+.skills-grid .skill{
     max-width: 500px;
     min-width:300px;
     height: 200px;
     /* border: 1px solid var(--maximumBlueGreen); */
     background: rgb(82,55,101);
     background: linear-gradient(90deg, rgba(82,55,101,1) 0%, rgba(107,76,76,1) 50%, rgba(94,68,32,1) 100%);
-    box-shadow: 0 3px 6px 0 rgba(3, 3, 3, 0.19), 0 6px 12px 0 rgba(49, 49, 49, 0.32);
+    box-shadow: 0 1px 4px 0 rgba(245, 245, 242, 0.6), 0 6px 12px 0 rgba(80, 76, 76, 0.32);
     margin: 5px;
     position: relative;
     border-radius: 5px;
@@ -278,26 +299,27 @@ body{
 #box-1{
     grid-area:H;
     justify-self: center;
-    border-left: 3px solid var(--maximumBlueGreen);
+    border-left: 4px solid var(--maximumBlueGreen);
 }
 #box-2{
     grid-area: C;
     justify-self: end;
-    border-top: 3px solid var(--Red);
+    border-top: 4px solid var(--Red);
 }
 #box-3{
     grid-area: J;
     justify-self: start;
-    border-bottom: 3px solid var(--Cyan);
+    border-bottom: 4px solid var(--Cyan);
 }
 #box-4{
     grid-area: S;
     justify-self: center;
-    border-right: 3px solid var(--mango);
+    border-right: 4px solid var(--mango);
 }
 
+
 #pageNo2 .show-more{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -423,7 +445,7 @@ body{
     }
 
     .right-half{
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;

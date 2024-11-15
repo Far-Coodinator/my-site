@@ -27,7 +27,7 @@
 
 </head>
 <body>
-    <div class="landing-page">
+    <div class="landing-page" id="landing-page">
         <nav class="nav-bar">
             <div class="nav-1">
                 <img src="iam - mob.png" alt="" id="my-pic-mob">
@@ -38,8 +38,8 @@
                     <span id="nav-mob-openBtn" style="font-size:30px;cursor:pointer">&#9776;</span>
                 </div>
                 <ul class="nav-ul">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Features</a></li>
+                    <li><a href="#landing-page">Home</a></li>
+                    <li><a href="#pageNo2">Features</a></li>
                     <li><a href="">Clint</a></li>
                     <li><a href="">Projects</a></li>
                     <li><a href="">Protfolio</a></li>
@@ -49,7 +49,7 @@
             </div>
         </nav>
         <div class="divider"></div>
-        <main class="lan-pg-content">
+        <main class="lan-pg-content" id="lan-pg-content">
             <div class="left-half">
                 <p class="pera-lan">WELCOME TO MY WORLD</p>
                 <h1 class="intro">Hey, I'am <span class="name-hiLigh">Farhan</span><br><span>a Developer.</span><span class="intro-space">|</span></h1>
@@ -74,7 +74,7 @@
     <main id="pageNo2">
         <div class="page-divider"></div>
         <h2>SKILLS</h2>
-        <div class="skills-grid">
+        <div class="skills-grid" id="skills-grid">
             <div class="skill" id="box-1">
                 <h4 class="nameOfskill">HTML</h4>
                 <p class="pera">Crafting clean, semantic code to build solid web foundations</p>
@@ -102,16 +102,23 @@
                 <h1>SKILLS</h1>
             </div>
         </div>
-        <div class="show-more">
+        <div class="show-more" id="show-more">
             <div class="line line-1"></div>
             <div class="btn">
                 <p class="pera">Show More</p>
                 <dotlottie-player src="https://lottie.host/67f601ca-361b-4e30-8cda-a4f83a24bca3/2Ao5gala1U.json" id="down-arrow" background="transparent" speed="4" style="width: 20px; height: 20px;" loop autoplay></dotlottie-player>
-
             </div>
             <div class="line line-2"></div>
         </div>
     </main>
+
+
+
+
+
+    <a href="#landing-page" id="goUp">
+            <img src="Icons/up-arrow.png" alt="" id="up-arrow">
+    </a>
     <!-- script for landing page animation -->
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>   
     
