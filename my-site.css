@@ -9,6 +9,8 @@
     --maximumBlueGreen:rgb(8,189,189);
     --mango:rgb(245,183,0);
     --nav-anchor:rgba(255, 255, 255, 0.404);
+    --smoothBlack :rgba(252, 248, 248, 0.594);
+    --smoothwhite :rgba(252, 248, 248, 0.929);
 
     /* root for pageNo2  */
     --Cyan: hsl(180, 62%, 55%);
@@ -25,7 +27,7 @@ body{
     color: white;
 }
 #goUp{
-    /* display: block; */
+    display: block;
     position: fixed;
     right: 30px;
     bottom: 35px;
@@ -241,6 +243,11 @@ body{
 }
 
 #pageNo2 > h2{
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: var(--electricGreen);
     text-align: center;
     margin: 20px;
 }
@@ -284,7 +291,7 @@ body{
 .skill .pera{
     margin: 0 30px;
     font-size: 15px;
-    color: var(--nav-anchor);
+    color: var(--smoothBlack);
     font-family: "Barlow Condensed", sans-serif;
 }
 
@@ -319,9 +326,12 @@ body{
 
 
 #pageNo2 .show-more{
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+#pageNo2 .show-more a{
+    text-decoration: none;
 }
 
 #pageNo2 .show-more .btn{
@@ -358,6 +368,46 @@ body{
 #pageNo2 .show-more:hover #down-arrow{
     visibility: visible;
 }
+
+/* Onclick the show more  */
+
+#pageNo2 #onclick-Show-more{
+    padding: 0 60px;
+    display: none;
+}
+
+#pageNo2 .onclick-Show-more .skillOnClick{
+    display: flex;
+}
+
+
+#pageNo2 .onclick-Show-more .skillOnClick .box-insideThe-skill{
+    width: 60%;
+}
+
+#pageNo2 .onclick-Show-more h2{
+    font-family: "Montserrat", sans-serif;
+    margin: 60px 0 0 50px;
+    color: var(--Cyan);
+}
+
+#pageNo2 .onclick-Show-more p{
+    font-family: "Barlow Condensed", sans-serif;
+    color: var(--smoothBlack);
+    margin: 20px 10px 10px 70px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.2em;
+}
+#pageNo2 .onclick-Show-more .download-link{
+  
+    color: var(--smoothwhite);
+}
+
+
+
+
+
 
 /* 🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️🐻‍❄️ */
 
@@ -480,4 +530,6 @@ body{
     #pageNo2 .show-more{
         display: none;
     }
+
+
 }

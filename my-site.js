@@ -15,7 +15,6 @@ closeBtn.addEventListener('click', ()=>{
 
 
 // to show nav bar while scrolling
-
 let lastScrollY = window.scrollY;
 const navBar = document.querySelector('#goUp');
 
@@ -29,3 +28,19 @@ const navBar = document.querySelector('#goUp');
     }
     lastScrollY = window.scrollY;
   });
+
+
+
+  // script for Show more And show less
+
+const ShowMoreBtn = document.querySelector('#show-more .btn')
+const hideShowMorebtn = document.querySelector('#show-more')
+const hideGrid = document.querySelector('#skills-grid')
+const showPageOnClick = document.querySelector('#onclick-Show-more')
+
+// to hode Onclick the Show more btn
+ShowMoreBtn.addEventListener('click',()=>{
+  hideShowMorebtn.style.display = ' none'
+  hideGrid.style.display = 'none'
+  showPageOnClick.style.display = 'block'
+})
