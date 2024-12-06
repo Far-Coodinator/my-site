@@ -542,6 +542,7 @@ body{
     font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 1px;
     resize: vertical;
+    border-bottom: 1px solid var(--green);
 }
 #pageNo4 .contact-form input:focus,textarea:focus{
     outline: none;
@@ -702,7 +703,7 @@ body{
         flex-direction:column ;
     }
     #pageNo4 .contact > div{
-        width: 90%;
+        width: 100%;
         margin:20px auto;
     }
 
@@ -710,6 +711,9 @@ body{
         height: 0;
         border-right:none ;
         border-bottom: 1px solid var(--green);
+    }
+    #pageNo4 .contact-form #form{
+        width: 90%;
     }
        
     
